@@ -17,9 +17,10 @@ namespace OmranRestaurant.Pages.Restaurants
             this.service = service;
         }
         public Restaurant Restaurant { get; set; }
-        public void OnGet(int id)
+        public IActionResult OnGet(int id)
         {
             Restaurant = service.GetRestaurantsById(id);
+            return Restaurant == null ? RedirectToPage("./NotFound") : Page();
         }
     }
 }

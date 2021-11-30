@@ -361,3 +361,4 @@ C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant\bin\Debug\net5.0\Omr
 C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant\bin\Debug\net5.0\OmranRestaurant.Data.pdb
 C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant\bin\Debug\net5.0\OmranRestaurant.Core.pdb
 C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant\obj\Debug\net5.0\Razor\Pages\Restaurants\Details.cshtml.g.cs
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant\obj\Debug\net5.0\Razor\Pages\Restaurants\NotFound.cshtml.g.cs
