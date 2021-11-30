@@ -1,0 +1,12 @@
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\bin\Debug\net5.0\OmranRestaurant.Core.deps.json
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\bin\Debug\net5.0\OmranRestaurant.Core.dll
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\bin\Debug\net5.0\ref\OmranRestaurant.Core.dll
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\bin\Debug\net5.0\OmranRestaurant.Core.pdb
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.csproj.AssemblyReference.cache
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.AssemblyInfoInputs.cache
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.AssemblyInfo.cs
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.csproj.CoreCompileInputs.cache
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.dll
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\ref\OmranRestaurant.Core.dll
+C:\Users\moham\source\repos\OmranRestaurant\OmranRestaurant.Core\obj\Debug\net5.0\OmranRestaurant.Core.pdb

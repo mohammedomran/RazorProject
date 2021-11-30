@@ -1,0 +1,11 @@
+﻿@page
+@model OmranRestaurant.Pages.Restaurants.DetailsModel
+@{
+}
+
+<h1>@Model.Restaurant.Name</h1>
+<p>Id : @Model.Restaurant.Id</p>
+<p>Location : @Model.Restaurant.Location</p>
+<p>Id : @Model.Restaurant.Cuisine</p>
+<p>Mobile : @Model.Restaurant.Mobile</p>
+<a asp-page="./List">All restaurants</a>

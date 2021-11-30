@@ -1,0 +1,41 @@
+﻿@page
+@model OmranRestaurant.Pages.NewFolder.IndexModel
+@{
+}
+
+<h1>Restaurants : @Model.Restaurants.Count()</h1>
+<form class="row" method="get">
+    <div class="form-group col-6">
+        <input name="restaurantName" class="form-control" type="search" />
+    </div>
+    <div class="form-group col-2">
+        <button class="form-control btn-primary">Search</button>
+    </div>
+</form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Cuisine</th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var restaurant in Model.Restaurants)
+        {
+        <tr>
+            <th scope="row">@restaurant.Id</th>
+            <td>@restaurant.Name</td>
+            <td>@restaurant.Location</td>
+            <td>@restaurant.Cuisine</td>
+            <td>
+                <a asp-page="./Details" asp-route-id="@restaurant.Id">Show</a>
+                <a asp-page="./Details" asp-route-id="@restaurant.Id">Edit</a>
+                <a asp-page="./Details" asp-route-id="@restaurant.Id">Delete</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>
