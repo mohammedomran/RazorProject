@@ -9,10 +9,11 @@ namespace OmranRestaurant.Data
     {
         List<Restaurant> Restaurants = new List<Restaurant>()
             {
-                new Restaurant { Id=0, Name="Heart attack", Mobile="0123456789", Cuisine=Restaurant.CuisineType.Egyptian, Location="Seqala" },
-                new Restaurant { Id=1, Name="MacDonalds", Mobile="0123456789", Cuisine=Restaurant.CuisineType.Mexican, Location="Dahar" },
-                new Restaurant { Id=2, Name = "KFC", Mobile="0123456789", Cuisine = Restaurant.CuisineType.Italian, Location = "Sherry" },
+                new Restaurant { Id=0, Name="Heart attack", Mobile="0123456789", Cuisine=CuisineType.Egyptian, Location="Seqala" },
+                new Restaurant { Id=1, Name="MacDonalds", Mobile="0123456789", Cuisine=CuisineType.Mexican, Location="Dahar" },
+                new Restaurant { Id=2, Name = "KFC", Mobile="0123456789", Cuisine = CuisineType.Italian, Location = "Sherry" },
             };
+
 
         public Restaurant GetRestaurantsById(int id)
         {
@@ -26,6 +27,27 @@ namespace OmranRestaurant.Data
                    orderby r.Name
                    select r;
         }
+
+        public Restaurant Update(Restaurant updatedRestaurant)
+        {
+            var restaurant = Restaurants.SingleOrDefault(r => r.Id == updatedRestaurant.Id);
+            if (restaurant != null)
+            {
+                restaurant.Name = updatedRestaurant.Name;
+                restaurant.Location = updatedRestaurant.Location;
+                restaurant.Mobile = updatedRestaurant.Mobile;
+                restaurant.Cuisine = updatedRestaurant.Cuisine;
+            }
+            return restaurant;
+        }
+
+        public Restaurant Add(Restaurant newRestaurant)
+        {
+            Restaurants.Add(newRestaurant);
+            newRestaurant.Id = Restaurants.Max(r => r.Id) + 1;
+            return newRestaurant;
+        }
+
 
     }
 }

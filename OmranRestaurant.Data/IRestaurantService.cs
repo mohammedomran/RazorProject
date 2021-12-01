@@ -11,5 +11,7 @@ namespace OmranRestaurant.Data
     {
         IEnumerable<Restaurant> GetRestaurantsByName(string name);
         Restaurant GetRestaurantsById(int id);
+        Restaurant Update(Restaurant updatedRestaurant);
+        Restaurant Add(Restaurant newRestaurant);
     }
 }

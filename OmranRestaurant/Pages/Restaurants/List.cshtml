@@ -32,10 +32,11 @@
             <td>@restaurant.Cuisine</td>
             <td>
                 <a asp-page="./Details" asp-route-id="@restaurant.Id">Show</a>
-                <a asp-page="./Details" asp-route-id="@restaurant.Id">Edit</a>
+                <a asp-page="./Edit" asp-route-id="@restaurant.Id">Edit</a>
                 <a asp-page="./Details" asp-route-id="@restaurant.Id">Delete</a>
             </td>
         </tr>
         }
     </tbody>
 </table>
+<a class="btn btn-primary" asp-page=".\Edit">Add new restaurant</a>
