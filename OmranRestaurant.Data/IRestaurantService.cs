@@ -13,5 +13,6 @@ namespace OmranRestaurant.Data
         Restaurant GetRestaurantsById(int id);
         Restaurant Update(Restaurant updatedRestaurant);
         Restaurant Add(Restaurant newRestaurant);
+        bool Delete(int id);
     }
 }

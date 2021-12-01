@@ -48,6 +48,17 @@ namespace OmranRestaurant.Data
             return newRestaurant;
         }
 
-
+        public bool Delete(int id)
+        {
+            foreach (var restaurant in Restaurants)
+            {
+                if (restaurant.Id == id)
+                {
+                    Restaurants.Remove(restaurant);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
